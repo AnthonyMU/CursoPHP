@@ -16,6 +16,8 @@ include ("prueba.php");
 echo "Este es el segundo mensaje <br>";
 
 dameDatos();
+
+echo "Gracias";
 	
 ?>
 	
