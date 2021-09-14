@@ -21,8 +21,7 @@
 	$num3=5.254343; //redondea el número
 	
 	echo "El numero cuando se redondea es: " . round ($num3,3);
-	
-	
+		
 ?>
 </body>
 </html>

@@ -11,19 +11,18 @@
 	
 	$var1=true;
 	$var2=false;
-	$resultado=$var1 && $var2; // resultado=false
+	$resultado=$var1 && $var2; // resultado=false // && operador logico Y, obliga a que se cumoplan todas las condiciones 
 	
 	if($resultado==true){
 		
-		echo "C orrecto";
+		echo "Correcto";
 		
 	}else{
 		
 		echo "Incorrecto";
 		
 	}
-	
-	
+
 ?>
 	
 	
