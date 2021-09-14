@@ -33,7 +33,7 @@
 
 <?php
 
-  include("calculadora.php");
+  include("calculadora.php"); //tenemos todo el codigo gracias a la llamada include
 
     if(isset($_POST["button"])){  
 		
