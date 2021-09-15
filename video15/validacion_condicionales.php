@@ -28,33 +28,33 @@
 
 	if(isset($_POST["enviando"])){ //Si el ususario pulsa el boton de enviar...
 
-		$contra=$_POST["contra_usuario"];
+		$edad=$_POST["edad_usuario"];
 
 		$nombre=$_POST["nombre_usuario"];
 
 		switch (true){
 
-			case $nombre=="Juan" && $contra=="1234":
+			case $edad<=18:
 
-				echo "Usuario autorizado, Hola Juan";
-
-				break;
-
-			case $nombre=="Irati" && $contra=="1234":
-
-				echo "Usuario autorizado, Hola Irati";
+				echo "Eres menor de edad";
 
 				break;
 
-			case $nombre=="Eva" && $contra=="1234":
+			case $edad<=30:
+
+				echo "Eres mayor de edad";
+
+				break;
+
+			case $edad<=60:
 				
-				echo "Usuario autorizado, Hola Eva";
+				echo "Eres  muy mayor de edad";
 
 				break;
 			
 			default:
 
-				echo "Usuario no autorizado";
+				echo "Usuario no autorizado, es menor de edad";
 		}
 
 	}
