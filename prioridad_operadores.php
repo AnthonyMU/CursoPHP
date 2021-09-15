@@ -23,7 +23,12 @@
 		
 	}
 
+// && tiene prioridad sobre =
+// = tiene prioridad sobre and
+
 ?>
+
+
 	
 	
 </body>
