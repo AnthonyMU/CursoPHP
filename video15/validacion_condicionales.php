@@ -34,6 +34,7 @@
 
 		$resultado=$nombre=="Anthony" && $contra=="1234" ? "Puedes acceder" : "No puedes acceder, usuario o contraseña incorrectos";
 		echo $resultado;
+
 	}
 	
 ?>

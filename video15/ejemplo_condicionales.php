@@ -43,7 +43,7 @@
     <tr>
       <td>Contraseña:</td>
       <td><label for="edad_usuario"></label>
-      <input type="text" name="contra" id="contra"></td>
+      <input type="text" name="contra_usuario" id="contra_usuario"></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
