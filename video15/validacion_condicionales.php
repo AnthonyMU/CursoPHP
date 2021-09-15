@@ -26,15 +26,15 @@
 
 <?php
 
-	if(isset($_POST["enviando"])){
+	if(isset($_POST["enviando"])){ //Si el ususario pulsa el boton de enviar...
 
 		$edad=$_POST["edad_usuario"];
 
-		if ($edad<=18){
+		if ($edad<=13){
 
 			echo "Eres menor de edad";
 
-		}else if($edad<=40){
+		}else if($edad<=45){
 
 			echo "Eres joven";
 
