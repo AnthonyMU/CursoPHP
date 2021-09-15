@@ -30,23 +30,9 @@
 
 		$edad=$_POST["edad_usuario"];
 
-		if ($edad<=13){
+		$resultado= $edad<18 ? "Eres menor de edad, no puedes acceder" : "Puedes acceder";
 
-			echo "Eres menor de edad";
-
-		}else if($edad<=45){
-
-			echo "Eres joven";
-
-		}else if($edad<=65){
-
-			echo "Eres maduro";
-		}else{
-
-			echo "Cuidate";
-
-		}
-
+		echo $resultado;
 	}
 	
 ?>
