@@ -28,12 +28,34 @@
 
 	if(isset($_POST["enviando"])){ //Si el ususario pulsa el boton de enviar...
 
-		$contra=$_POST["contra"];
+		$contra=$_POST["contra_usuario"];
 
 		$nombre=$_POST["nombre_usuario"];
 
-		$resultado=$nombre=="Anthony" && $contra=="1234" ? "Puedes acceder" : "No puedes acceder, usuario o contraseña incorrectos";
-		echo $resultado;
+		switch (true){
+
+			case $nombre=="Juan" && $contra=="1234":
+
+				echo "Usuario autorizado, Hola Juan";
+
+				break;
+
+			case $nombre=="Irati" && $contra=="1234":
+
+				echo "Usuario autorizado, Hola Irati";
+
+				break;
+
+			case $nombre=="Eva" && $contra=="1234":
+				
+				echo "Usuario autorizado, Hola Eva";
+
+				break;
+			
+			default:
+
+				echo "Usuario no autorizado";
+		}
 
 	}
 	
