@@ -28,12 +28,34 @@
 
 	if(isset($_POST["enviando"])){ //Si el ususario pulsa el boton de enviar...
 
-		$contra=$_POST["contra"];
+		$edad=$_POST["edad_usuario"];
 
 		$nombre=$_POST["nombre_usuario"];
 
-		$resultado=$nombre=="Anthony" && $contra=="1234" ? "Puedes acceder" : "No puedes acceder, usuario o contraseña incorrectos";
-		echo $resultado;
+		switch (true){
+
+			case $edad<=18:
+
+				echo "Eres menor de edad";
+
+				break;
+
+			case $edad<=30:
+
+				echo "Eres mayor de edad";
+
+				break;
+
+			case $edad<=60:
+				
+				echo "Eres  muy mayor de edad";
+
+				break;
+			
+			default:
+
+				echo "Usuario no autorizado, es menor de edad";
+		}
 
 	}
 	
